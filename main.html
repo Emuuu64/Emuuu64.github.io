@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Emaan's Portfolio</title>
+        
+        <style>
+
+            body {
+                background-color: #121212;
+                color: #DDACF5;
+                font-size: 20px;
+                font-family: monospace;
+            }
+
+            #header {
+                background-color: #64379F;
+
+                position: fixed;
+                text-align: center;
+                width: 100%;
+                top: 0;
+                left: 0;
+                overflow-x: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+            .header {
+                color: #DDACF5;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-family: "Apercu Mono", monospace;
+            }
+
+            #hello {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding-top: 30px;
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            #intro {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding-top: 30px;
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            #Projects {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding-top: 30px;
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            #skills {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding-top: 30px;
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            #Contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding-top: 30px;
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            #inner-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);               
+                gap: 10px;
+            }
+
+            #welcome {
+                color: #9854CB;
+                font-family: monospace;
+                font-size: 70px;
+                padding: 40;
+            }
+
+            .heading {
+                color: #9854CB;
+                font-family: monospace;
+                font-size: 50px
+            }
+
+            .description {
+                color: #DDACF5;
+                font-size: 20px;
+                font-family: monospace;
+            }
+
+            .project-name {
+                color: #75E8E7;
+                font-family: monospace;
+                font-size: 25px;
+            }
+
+            .project-description {
+                color: #DDACF5;
+                font-size: 20px;
+                font-family: monospace;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+                padding: 5px;
+            }
+
+            .contact {
+                color: #DDACF5;
+                font-size: 20px;
+                font-family: monospace;
+            }
+
+            .hover-container {
+                background: #666666;
+            }
+            .hover-container:hover .project-description {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            a {
+                color: #DDACF5;
+            }
+
+            a:visited {
+                color: #DDACF5;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+    <div id="header"> 
+        <p class="header"><a href="#intro">About me</a></p>
+        <p class="header"><a href="#Projects">Projects</a></p>
+        <p class="header"><a href="#skills">My skills</a></p>
+        <p class="header"><a href="#Contact">Contact</a></p>
+    </div>
+    
+    <div id="hello">
+        <h1 id="welcome">Welcome to my website!</h1>
+    </div>
+
+
+    <div id="intro">
+        <h1 class="heading">About Me</h1>
+        <p class="description">Hi! My name is Emaan Omar, and I'm a 10th grade student of LGS 55 Main, Lahore.
+            I enjoy anything that requires a computer- programming (games, apps, anything), robotics,
+            3D design, even (ethical) hacking! I've dipped my toes into a bit of everything, and I'm still
+            improving my skills and learning. I've created this website as a space to share my passion with you.
+            Welcome to my journey!</p>
+    </div>
+
+    <div id="Projects">
+        <h1 class="heading">Projects</h1>
+        <div id="inner-grid">
+
+            <div class="hover-container">
+                <h2 class="project-name">Web Search Optimizer</h2>
+                <p class="project-description">A simple script written in Python which takes a main query and keywords 
+                and gives you only the relevant information from sites, eliminating the need to look through 
+                hundreds of websites to find the information you need.</p>
+            </div>
+
+            <div class="hover-container">
+                <h2 class="project-name">Controllable Robotic Arm</h2>
+                <p class="project-description">A robotic arm with four joints, each individually controllable by a 
+                potentiometer, as well as being able to be programmed to take a series of instructions and repeat
+                them, powered by an Arduino microcontroller.</p>
+            </div>
+
+            <div class="hover-container">
+                <h2 class="project-name">This website!</h2>
+                <p class="project-description">I made this website entirely from scratch, on my own, writing the bare
+                HTML for it. I also made this website within 3 hours, so that I could give it as reference
+                for my application.(please hire me I can do even better than this)</p>
+            </div>
+
+            <div class="hover-container">
+                <h2 class="project-name">Wikipedia Accessor</h2>
+                <p class="project-description">A Python script which allows you to access Wikipedia even when the 
+                website is banned. This script was written in February 2023 (i.e. when I was in 8th grade)
+                to allow me to access Wikipedia even when the Pakistani government banned it.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="skills">
+        <h1 class="heading">My Skills</h1>
+        <ul>
+            <li>I can work fast and well under a deadline (as I hope this website might show)</li>
+            <li>I am proficient in programming in various languages, including but not limited to 
+                Python, HTML, CSS, C++, etc.</li>
+            <li>I'm a fast learner and can quickly adapt to changes (I created my Wikipedia Accessor
+                within a day of it being banned.</li>
+            <li>I also enjoy learning new things, be it about progamming, science, history, 
+                current affairs etc.</li>
+        </ul>
+    </div>
+
+
+    <div id="Contact">
+        <h1 class="heading">Contact me</h1>
+        <p class="contact">Email: <a href=mailto:emaan189d@gmail.com">emaan189d@gmail.com</a></p>
+        <p class="contact">Phone number: 0312-0824061</p>
+    </div>
+    </body>
+</html>
